@@ -1,4 +1,4 @@
-# Reservaation Api
+# Reservation Api
 
 ## Required Software/Setup
 
