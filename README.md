@@ -9,11 +9,11 @@
     - For the database superuser (postgres) give any password.
     - Once installed, Create a test account.
         - Launch pgAdmin 4
-        - Navigate to Servers => Login/Group Roles => right clieck and select create
+        - Navigate to Servers => Login/Group Roles => right click and select create
             - Name: test
             - Password: test
             - All privilages enabled 
-- Download and open the BookingService: https://github.com/JohnSteeleUrban/reservation-api
+- Download and open the Service: https://github.com/JohnSteeleUrban/reservation-api
 - Open the solution with Visual Studio 2022.
 - Right click the solution in the Solution Explorer and click *Restore Nuget Packages*
 - Run the *Reservation.Api* Profile.
