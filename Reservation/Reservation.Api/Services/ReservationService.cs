@@ -82,7 +82,7 @@ namespace Reservation.Api.Services
         private async Task<bool> ValidateReservation(ReservationDto reservationDto)
         {
             //reservations must be made 24 hours in advance
-            if (reservationDto.Time < DateTime.UtcNow) throw new Exception("Reservations must be made 24 hours in advance.");
+            if (reservationDto.Time < DateTime.UtcNow.AddDays(1)) throw new Exception("Reservations must be made 24 hours in advance.");
 
             // Make sure we are in 15 min increments (this is ugly but i can't think of a better solution in a short time frame.
             if (reservationDto.Time.Minute != 0 || 
